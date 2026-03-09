@@ -264,6 +264,7 @@ const filteredLinks = computed(() =>
     right: 0;
     flex-direction: column;
     align-items: stretch;
+    gap: 0.75rem;
     padding: 1.5rem;
     background: rgba(255,255,255,0.98);
     box-shadow: 0 10px 40px rgba(0,0,0,0.1);
@@ -276,6 +277,30 @@ const filteredLinks = computed(() =>
     transform: translateY(0);
     opacity: 1;
     pointer-events: auto;
+  }
+  .header-ref__nav .header-ref__link,
+  .header-ref__nav .header-ref__btn-link,
+  .header-ref__nav .header-ref__btn-login {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+  }
+  .header-ref__nav .header-ref__btn-link {
+    background: rgba(214, 151, 49, 0.08);
+    border: 1px solid rgba(214, 151, 49, 0.3);
+  }
+  .header-ref__nav .header-ref__btn-login {
+    margin-top: 0.25rem;
+    text-align: center;
+  }
+  .header-ref__nav .header-ref__lang {
+    width: 100%;
+  }
+  .header-ref__nav .header-ref__lang :deep(.lang-switcher__trigger) {
+    width: 100%;
+    justify-content: center;
   }
 }
 </style>

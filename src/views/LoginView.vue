@@ -46,13 +46,8 @@ async function login() {
     <div class="container" style="max-width: 420px;">
       <h1 class="section-title">{{ t('login.title') }}</h1>
       <p class="section-subtitle">{{ t('login.subtitle') }}</p>
-
       <form @submit.prevent="login" class="login-form">
-        <p class="login-hint">
-          {{ t('login.hint') }}<br />
-          <code>admin@vonnavi.com</code> / <code>Admin123</code><br />
-          <code>ventas@vonnavi.com</code> / <code>Ventas123</code>
-        </p>
+        
         <div class="form-group">
           <label>{{ t('login.email') }}</label>
           <input v-model="email" type="email" placeholder="admin@vonnavi.com" required />
@@ -68,6 +63,13 @@ async function login() {
       </form>
     </div>
   </div>
+  <p class="login-hint">
+        
+          <!--
+          <code>admin@vonnavi.com</code> / <code>Admin123</code><br />
+          <code>ventas@vonnavi.com</code> / <code>Ventas123</code>
+          -->
+        </p>
 </template>
 
 <style scoped>

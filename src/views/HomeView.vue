@@ -512,7 +512,18 @@ function getTestimonialAvatar(item, items, idx) {
 }
 
 @media (max-width: 640px) {
-  .hero-search__bar { flex-direction: column; padding: 1rem; }
+  .hero-search {
+    max-width: none;
+    width: calc(100% + 7rem);
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0 1.5rem;
+  }
+  .hero-search__bar {
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 16px;
+  }
   .hero-search__field { flex: 1 1 100%; }
   .hero-search__btn { width: 100%; justify-content: center; }
 }
