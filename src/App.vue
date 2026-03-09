@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, nextTick, provide } from 'vue'
+import { ref, computed, onMounted, onUnmounted, nextTick, provide } from 'vue'
 import { useRoute } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -13,24 +13,38 @@ const pageLoading = ref(true)
 
 const reservarModalOpen = ref(false)
 const reservarModalParams = ref({})
+
+function openReservarModal(params = {}) {
+  reservarModalParams.value = { ...params }
+  reservarModalOpen.value = true
+}
+
+function closeReservarModal() {
+  reservarModalOpen.value = false
+  reservarModalParams.value = {}
+}
+
 provide('reservarModal', {
   isOpen: reservarModalOpen,
   initialParams: reservarModalParams,
-  open: (params = {}) => {
-    reservarModalParams.value = { ...params }
-    reservarModalOpen.value = true
-  },
-  close: () => {
-    reservarModalOpen.value = false
-    reservarModalParams.value = {}
-  }
+  open: openReservarModal,
+  close: closeReservarModal
 })
 
+function onOpenReservar(e) {
+  openReservarModal(e.detail || {})
+}
+
 onMounted(async () => {
+  window.addEventListener('vonnavi-open-reservar', onOpenReservar)
   await nextTick()
   requestAnimationFrame(() => {
     setTimeout(() => { pageLoading.value = false }, 400)
   })
+})
+
+onUnmounted(() => {
+  window.removeEventListener('vonnavi-open-reservar', onOpenReservar)
 })
 </script>
 
