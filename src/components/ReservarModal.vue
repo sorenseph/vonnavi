@@ -1,7 +1,6 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { ref, watch, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
-import { useReservarModal } from '../composables/useReservarModal'
 import { supabase } from '../lib/supabase'
 import { paquetesEstaticos } from '@/data/paquetes'
 import vuelo1 from '@/assets/Vuelos/XpSlTlDl8LcZ8ClJwchoyfn8.avif'
@@ -10,7 +9,10 @@ import vuelo3 from '@/assets/Vuelos/UXdALwELL4smvYbj5CLWGbNtIE.avif'
 import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 
 const { t } = useI18n()
-const { isOpen, initialParams, close } = useReservarModal()
+const modal = inject('reservarModal')
+const isOpen = modal?.isOpen ?? { value: false }
+const initialParams = modal?.initialParams ?? { value: {} }
+const close = modal?.close ?? (() => {})
 const paquetes = paquetesEstaticos
 const vueloImages = [vuelo1, vuelo2, vuelo3, vuelo4]
 const loading = ref(false)

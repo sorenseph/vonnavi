@@ -1,18 +1,16 @@
-import { ref } from 'vue'
+import { inject } from 'vue'
 
-const isOpen = ref(false)
-const initialParams = ref({})
+const RESERVAR_MODAL_KEY = 'reservarModal'
 
 export function useReservarModal() {
-  function open(params = {}) {
-    initialParams.value = { ...params }
-    isOpen.value = true
+  const modal = inject(RESERVAR_MODAL_KEY)
+  if (!modal) {
+    return {
+      isOpen: { value: false },
+      initialParams: { value: {} },
+      open: () => {},
+      close: () => {}
+    }
   }
-
-  function close() {
-    isOpen.value = false
-    initialParams.value = {}
-  }
-
-  return { isOpen, initialParams, open, close }
+  return modal
 }

@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, onMounted, nextTick } from 'vue'
+import { ref, computed, onMounted, nextTick, provide } from 'vue'
 import { useRoute } from 'vue-router'
 import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
@@ -10,6 +10,21 @@ import ReservarModal from './components/ReservarModal.vue'
 const route = useRoute()
 const showWhatsApp = computed(() => !route.meta.requiresAuth)
 const pageLoading = ref(true)
+
+const reservarModalOpen = ref(false)
+const reservarModalParams = ref({})
+provide('reservarModal', {
+  isOpen: reservarModalOpen,
+  initialParams: reservarModalParams,
+  open: (params = {}) => {
+    reservarModalParams.value = { ...params }
+    reservarModalOpen.value = true
+  },
+  close: () => {
+    reservarModalOpen.value = false
+    reservarModalParams.value = {}
+  }
+})
 
 onMounted(async () => {
   await nextTick()
