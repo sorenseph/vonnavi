@@ -2,6 +2,12 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { locales } from '../i18n'
+import flagMexico from '@/assets/images/flags/mexico.png'
+import flagFrance from '@/assets/images/flags/france.png'
+import flagUnitedStates from '@/assets/images/flags/united-states.png'
+import flagBrazil from '@/assets/images/flags/brazil.png'
+
+const flagByCode = { es: flagMexico, fr: flagFrance, en: flagUnitedStates, pt: flagBrazil }
 
 const { locale } = useI18n()
 const open = ref(false)
@@ -31,12 +37,11 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
       :aria-label="currentLocale.name"
       @click="open = !open"
     >
-      <svg class="lang-switcher__globe" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="12" cy="12" r="10"/>
-        <line x1="2" y1="12" x2="22" y2="12"/>
-        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-      </svg>
-      <span class="lang-switcher__code">{{ currentLocale.shortCode || currentLocale.code.toUpperCase() }}</span>
+      <img
+        :src="flagByCode[currentLocale.code]"
+        :alt="currentLocale.name"
+        class="lang-switcher__flag"
+      />
       <svg class="lang-switcher__chevron" :class="{ 'lang-switcher__chevron--open': open }" width="12" height="12" viewBox="0 0 12 12">
         <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
       </svg>
@@ -50,7 +55,12 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
           :class="{ 'lang-switcher__option--active': locale === loc.code }"
           @click="setLocale(loc.code)"
         >
-          <span class="lang-switcher__option-code">{{ loc.shortCode || loc.code.toUpperCase() }}</span>
+          <img
+            v-if="flagByCode[loc.code]"
+            :src="flagByCode[loc.code]"
+            :alt="loc.name"
+            class="lang-switcher__option-flag"
+          />
           <span class="lang-switcher__option-name">{{ loc.name }}</span>
         </button>
       </div>
@@ -84,14 +94,12 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
   border-color: rgba(0, 0, 0, 0.12);
 }
 
-.lang-switcher__globe {
+.lang-switcher__flag {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 3px;
   flex-shrink: 0;
-  color: var(--color-primary);
-}
-
-.lang-switcher__code {
-  font-weight: 500;
-  letter-spacing: 0.02em;
 }
 
 .lang-switcher__chevron {
@@ -141,19 +149,17 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
   background: rgba(214, 151, 49, 0.12);
 }
 
-.lang-switcher__option--active .lang-switcher__option-code {
-  color: var(--color-primary);
-  font-weight: 600;
+.lang-switcher__option-flag {
+  width: 22px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
 }
 
 .lang-switcher__option--active .lang-switcher__option-name {
   color: #2d2d2d;
   font-weight: 500;
-}
-
-.lang-switcher__option-code {
-  font-weight: 500;
-  min-width: 1.8em;
 }
 
 .lang-switcher__option-name {
