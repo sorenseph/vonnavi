@@ -138,7 +138,37 @@
     "viewAll": "Ver Más Paquetes",
     "includes": "Incluye",
     "notFound": "Paquete no encontrado",
-    "reserve": "Reservar"
+    "reserve": "Reservar",
+    "items": {
+      "plus": {
+        "name": "Paquete Plus",
+        "description": "Coffe break, vuelo 45-60 min, seguro de viajero, certificado, brindis con vino espumoso, desayuno buffet, transporte redondo PRIVADO (1-4 personas).",
+        "incluye": [
+          "Coffe break",
+          "Vuelo con duración de 45 a 60 min aproximadamente",
+          "Seguro de viajero",
+          "Certificado de vuelo",
+          "Brindis con vino espumoso",
+          "Desayuno Buffet",
+          "Transporte redondo PRIVADO (1 a 4 personas)"
+        ]
+      },
+      "gold": {
+        "name": "Paquete Gold",
+        "description": "Experiencia premium con desayuno y amenities especiales.",
+        "incluye": ["Vuelo en globo", "Desayuno premium", "Champagne", "Certificado"]
+      },
+      "desayuno": {
+        "name": "Paquete Desayuno",
+        "description": "Vuelo + desayuno buffet. Vuelos compartidos de 6 a 24 pasajeros.",
+        "incluye": ["Vuelo en globo", "Desayuno buffet", "Certificado"]
+      },
+      "basico": {
+        "name": "Vuelos Básico",
+        "description": "Vuelo en globo sobre Teotihuacán. Incluye certificado de vuelo.",
+        "incluye": ["Vuelo en globo", "Certificado de vuelo"]
+      }
+    }
   },
   "footer": {
     "tagline": "Vuelo en globo desde CDMX. Zona arqueológica de Teotihuacán.",
@@ -172,7 +202,7 @@
     "backHome": "Volver al inicio",
     "placeholderMsg": "Comentarios o preguntas...",
     "placeholderPromo": "Ej: VERANO25",
-    "placeholderEmail": "tu@email.com",
+    "placeholderEmail": "tu{'@'}email.com",
     "placeholderPhone": "55 1234 5678"
   },
   "reserve": {
@@ -201,7 +231,7 @@
     "successText": "Te contactaremos pronto con los detalles de tu cotización.",
     "backHome": "Volver al inicio",
     "placeholderNotes": "Comentarios adicionales",
-    "placeholderEmail": "tu@email.com",
+    "placeholderEmail": "tu{'@'}email.com",
     "placeholderPhone": "55 1234 5678",
     "fillRequired": "Completa todos los campos obligatorios.",
     "invalidPhone": "Teléfono inválido. Solo números (ej: 5512345678).",

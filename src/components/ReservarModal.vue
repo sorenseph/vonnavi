@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch, inject } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { usePackageI18n } from '../composables/usePackageI18n'
 import { supabase } from '../lib/supabase'
 import { paquetesEstaticos } from '@/data/paquetes'
 import vuelo1 from '@/assets/Vuelos/XpSlTlDl8LcZ8ClJwchoyfn8.avif'
@@ -9,6 +10,7 @@ import vuelo3 from '@/assets/Vuelos/UXdALwELL4smvYbj5CLWGbNtIE.avif'
 import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 
 const { t } = useI18n()
+const { getPackageName } = usePackageI18n()
 const modal = inject('reservarModal')
 const isOpen = modal?.isOpen ?? { value: false }
 const initialParams = modal?.initialParams ?? { value: {} }
@@ -228,7 +230,7 @@ function handleClose() {
                   >
                     <div class="reservar-paquete-card__img" :style="{ backgroundImage: `url(${getPackageImage(p, i)})` }"></div>
                     <div class="reservar-paquete-card__body">
-                      <span class="reservar-paquete-card__name">{{ p.nombre }}</span>
+                      <span class="reservar-paquete-card__name">{{ getPackageName(p) }}</span>
                       <span class="reservar-paquete-card__price">${{ Number(p.precio).toLocaleString('es-MX') }}</span>
                     </div>
                   </button>

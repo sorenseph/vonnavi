@@ -138,7 +138,37 @@
     "viewAll": "View More Packages",
     "includes": "Includes",
     "notFound": "Package not found",
-    "reserve": "Reserve"
+    "reserve": "Reserve",
+    "items": {
+      "plus": {
+        "name": "Plus Package",
+        "description": "Coffee break, 45-60 min flight, travel insurance, certificate, sparkling wine toast, buffet breakfast, round-trip PRIVATE transport (1-4 people).",
+        "incluye": [
+          "Coffee break",
+          "Flight duration 45 to 60 min approximately",
+          "Travel insurance",
+          "Flight certificate",
+          "Sparkling wine toast",
+          "Buffet breakfast",
+          "Round-trip PRIVATE transport (1 to 4 people)"
+        ]
+      },
+      "gold": {
+        "name": "Gold Package",
+        "description": "Premium experience with breakfast and special amenities.",
+        "incluye": ["Hot air balloon flight", "Premium breakfast", "Champagne", "Certificate"]
+      },
+      "desayuno": {
+        "name": "Breakfast Package",
+        "description": "Flight + buffet breakfast. Shared flights for 6 to 24 passengers.",
+        "incluye": ["Hot air balloon flight", "Buffet breakfast", "Certificate"]
+      },
+      "basico": {
+        "name": "Basic Flights",
+        "description": "Hot air balloon flight over Teotihuacán. Includes flight certificate.",
+        "incluye": ["Hot air balloon flight", "Flight certificate"]
+      }
+    }
   },
   "footer": {
     "tagline": "Hot air balloon from CDMX. Teotihuacán archaeological zone.",
@@ -172,7 +202,7 @@
     "backHome": "Back to home",
     "placeholderMsg": "Comments or questions...",
     "placeholderPromo": "e.g. VERANO25",
-    "placeholderEmail": "you@email.com",
+    "placeholderEmail": "you{'@'}email.com",
     "placeholderPhone": "55 1234 5678"
   },
   "reserve": {
@@ -201,7 +231,7 @@
     "successText": "We will contact you shortly with the details of your quote.",
     "backHome": "Back to home",
     "placeholderNotes": "Additional comments",
-    "placeholderEmail": "you@email.com",
+    "placeholderEmail": "you{'@'}email.com",
     "placeholderPhone": "55 1234 5678",
     "fillRequired": "Please fill in all required fields.",
     "invalidPhone": "Invalid phone. Numbers only (e.g. 5512345678).",

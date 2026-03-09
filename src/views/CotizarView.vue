@@ -1,11 +1,13 @@
 <script setup>
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { usePackageI18n } from '../composables/usePackageI18n'
 import { useSeo } from '../composables/useSeo'
 import { supabase } from '../lib/supabase'
 import { paquetesEstaticos } from '@/data/paquetes'
 
 const { t } = useI18n()
+const { getPackageName } = usePackageI18n()
 
 useSeo({
   title: 'Solicitar Cotización | Von Navi - Vuelo en Globo',
@@ -124,7 +126,7 @@ async function enviar() {
         <div>
           <label class="block text-sm font-medium text-stone-700 mb-1.5">{{ t('quote.package') }}</label>
           <select v-model="form.paquete_slug" class="form-input">
-            <option v-for="p in paquetes" :key="p.id" :value="p.slug">{{ p.nombre }} — ${{ Number(p.precio).toLocaleString('es-MX') }}</option>
+            <option v-for="p in paquetes" :key="p.id" :value="p.slug">{{ getPackageName(p) }} — ${{ Number(p.precio).toLocaleString('es-MX') }}</option>
           </select>
         </div>
         <div>

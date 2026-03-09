@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useReservarModal } from '../composables/useReservarModal'
+import { usePackageI18n } from '../composables/usePackageI18n'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '../composables/useSeo'
 import { paquetesEstaticos } from '@/data/paquetes'
@@ -12,6 +13,7 @@ import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 
 const vueloImages = [vuelo1, vuelo2, vuelo3, vuelo4]
 const { t } = useI18n()
+const { getPackageName, getPackageDesc, getPackageIncluye } = usePackageI18n()
 const route = useRoute()
 const { open: openReservarModal } = useReservarModal()
 const paquete = computed(() =>
@@ -25,14 +27,14 @@ const heroImage = computed(() => {
 
 const metaTitle = computed(() =>
   paquete.value
-    ? `${paquete.value.nombre} | Von Navi - Vuelo en Globo Teotihuacán`
+    ? `${getPackageName(paquete.value)} | Von Navi - Vuelo en Globo Teotihuacán`
     : 'Paquete | Von Navi'
 )
 
-useSeo({
-  title: metaTitle,
-  description: paquete.value?.descripcion || 'Paquete de vuelo en globo Teotihuacán'
-})
+const metaDesc = computed(() =>
+  paquete.value ? getPackageDesc(paquete.value) : 'Paquete de vuelo en globo Teotihuacán'
+)
+useSeo({ title: metaTitle, description: metaDesc })
 </script>
 
 <template>
@@ -49,14 +51,14 @@ useSeo({
           :style="{ backgroundImage: `url(${paquete.imagen_url || heroImage})` }"
         ></div>
         <div class="paquete-detail__header">
-          <h1>{{ paquete.nombre }}</h1>
+          <h1>{{ getPackageName(paquete) }}</h1>
           <p class="paquete-detail__price">${{ Number(paquete.precio).toLocaleString('es-MX') }}</p>
         </div>
-        <p class="paquete-detail__desc">{{ paquete.descripcion }}</p>
-        <div v-if="paquete.incluye?.length" class="paquete-detail__incluye">
+        <p class="paquete-detail__desc">{{ getPackageDesc(paquete) }}</p>
+        <div v-if="getPackageIncluye(paquete).length" class="paquete-detail__incluye">
           <h3>{{ t('packages.includes') }}</h3>
           <ul>
-            <li v-for="(item, i) in paquete.incluye" :key="i">{{ item }}</li>
+            <li v-for="(item, i) in getPackageIncluye(paquete)" :key="i">{{ item }}</li>
           </ul>
         </div>
         <div class="paquete-detail__actions">

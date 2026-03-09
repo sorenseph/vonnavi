@@ -138,7 +138,37 @@
     "viewAll": "Voir Plus de Forfaits",
     "includes": "Inclus",
     "notFound": "Forfait introuvable",
-    "reserve": "Réserver"
+    "reserve": "Réserver",
+    "items": {
+      "plus": {
+        "name": "Forfait Plus",
+        "description": "Café et viennoiseries, vol 45-60 min, assurance voyage, certificat, toast au vin mousseux, petit-déjeuner buffet, transport PRIVÉ aller-retour (1-4 personnes).",
+        "incluye": [
+          "Café et viennoiseries",
+          "Vol d'une durée de 45 à 60 min environ",
+          "Assurance voyage",
+          "Certificat de vol",
+          "Toast au vin mousseux",
+          "Petit-déjeuner buffet",
+          "Transport PRIVÉ aller-retour (1 à 4 personnes)"
+        ]
+      },
+      "gold": {
+        "name": "Forfait Gold",
+        "description": "Expérience premium avec petit-déjeuner et commodités spéciales.",
+        "incluye": ["Vol en montgolfière", "Petit-déjeuner premium", "Champagne", "Certificat"]
+      },
+      "desayuno": {
+        "name": "Forfait Petit-déjeuner",
+        "description": "Vol + petit-déjeuner buffet. Vols partagés de 6 à 24 passagers.",
+        "incluye": ["Vol en montgolfière", "Petit-déjeuner buffet", "Certificat"]
+      },
+      "basico": {
+        "name": "Vols Basique",
+        "description": "Vol en montgolfière au-dessus de Teotihuacán. Inclut certificat de vol.",
+        "incluye": ["Vol en montgolfière", "Certificat de vol"]
+      }
+    }
   },
   "footer": {
     "tagline": "Vol en montgolfière depuis Mexico. Zone archéologique de Teotihuacán.",
@@ -172,7 +202,7 @@
     "backHome": "Retour à l'accueil",
     "placeholderMsg": "Commentaires ou questions...",
     "placeholderPromo": "Ex: VERANO25",
-    "placeholderEmail": "vous@email.com",
+    "placeholderEmail": "vous{'@'}email.com",
     "placeholderPhone": "55 1234 5678"
   },
   "reserve": {
@@ -201,7 +231,7 @@
     "successText": "Vous recevrez un email de confirmation avec les détails. Nous vous contacterons pour finaliser le paiement.",
     "backHome": "Retour à l'accueil",
     "placeholderNotes": "Commentaires supplémentaires",
-    "placeholderEmail": "vous@email.com",
+    "placeholderEmail": "vous{'@'}email.com",
     "placeholderPhone": "55 1234 5678",
     "fillRequired": "Veuillez remplir tous les champs obligatoires.",
     "invalidPhone": "Téléphone invalide. Chiffres uniquement (ex: 5512345678).",

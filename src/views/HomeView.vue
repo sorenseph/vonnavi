@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { useReservarModal } from '../composables/useReservarModal'
+import { usePackageI18n } from '../composables/usePackageI18n'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '../composables/useSeo'
 import { supabase } from '@/lib/supabase'
@@ -41,6 +42,7 @@ const testimonialPersonImagesFemale = allPersonEntries.filter(([path]) => path.i
 const testimonialPersonImagesMale = allPersonEntries.filter(([path]) => path.includes('hombre')).map(([, v]) => v)
 
 const { t, tm, locale } = useI18n()
+const { getPackageName, getPackageDesc, getPackageIncluye } = usePackageI18n()
 const testimonialItems = computed(() => tm('testimonial.items') || [])
 useScrollReveal()
 
@@ -319,14 +321,14 @@ function getTestimonialAvatar(item, items, idx) {
             <div class="paquete-card__img" :style="{ backgroundImage: `url(${getPackageImage(p, i)})` }">
               <div class="paquete-card__overlay"></div>
               <div class="paquete-card__hover-info">
-                <p class="paquete-card__hover-desc">{{ p.descripcion }}</p>
-                <ul v-if="p.incluye?.length" class="paquete-card__hover-incluye">
-                  <li v-for="(inc, j) in (p.incluye || []).slice(0, 4)" :key="j">✓ {{ inc }}</li>
+                <p class="paquete-card__hover-desc">{{ getPackageDesc(p) }}</p>
+                <ul v-if="getPackageIncluye(p).length" class="paquete-card__hover-incluye">
+                  <li v-for="(inc, j) in getPackageIncluye(p).slice(0, 4)" :key="j">✓ {{ inc }}</li>
                 </ul>
               </div>
             </div>
             <div class="paquete-card__body">
-              <h4 class="paquete-card__name">{{ p.nombre }}</h4>
+              <h4 class="paquete-card__name">{{ getPackageName(p) }}</h4>
               <p class="paquete-card__price">${{ Number(p.precio).toLocaleString('es-MX') }}</p>
               <span class="paquete-card__cta">{{ t('packages.viewDetails') }} →</span>
             </div>

@@ -138,7 +138,37 @@
     "viewAll": "Ver Mais Pacotes",
     "includes": "Inclui",
     "notFound": "Pacote não encontrado",
-    "reserve": "Reservar"
+    "reserve": "Reservar",
+    "items": {
+      "plus": {
+        "name": "Pacote Plus",
+        "description": "Café da manhã leve, voo 45-60 min, seguro de viagem, certificado, brinde com espumante, café da manhã buffet, transporte PRIVADO ida e volta (1-4 pessoas).",
+        "incluye": [
+          "Café da manhã leve",
+          "Voo com duração de 45 a 60 min aproximadamente",
+          "Seguro de viagem",
+          "Certificado de voo",
+          "Brinde com espumante",
+          "Café da manhã buffet",
+          "Transporte PRIVADO ida e volta (1 a 4 pessoas)"
+        ]
+      },
+      "gold": {
+        "name": "Pacote Gold",
+        "description": "Experiência premium com café da manhã e amenities especiais.",
+        "incluye": ["Voo de balão", "Café da manhã premium", "Champanhe", "Certificado"]
+      },
+      "desayuno": {
+        "name": "Pacote Desayuno",
+        "description": "Voo + café da manhã buffet. Voos compartilhados de 6 a 24 passageiros.",
+        "incluye": ["Voo de balão", "Café da manhã buffet", "Certificado"]
+      },
+      "basico": {
+        "name": "Voos Básico",
+        "description": "Voo de balão sobre Teotihuacán. Inclui certificado de voo.",
+        "incluye": ["Voo de balão", "Certificado de voo"]
+      }
+    }
   },
   "footer": {
     "tagline": "Voo de balão desde CDMX. Zona arqueológica de Teotihuacán.",
@@ -172,7 +202,7 @@
     "backHome": "Voltar ao início",
     "placeholderMsg": "Comentários ou perguntas...",
     "placeholderPromo": "Ex: VERANO25",
-    "placeholderEmail": "voce@email.com",
+    "placeholderEmail": "voce{'@'}email.com",
     "placeholderPhone": "55 1234 5678"
   },
   "reserve": {
@@ -201,7 +231,7 @@
     "successText": "Você receberá um email de confirmação com os detalhes. Entraremos em contato para completar o pagamento.",
     "backHome": "Voltar ao início",
     "placeholderNotes": "Comentários adicionais",
-    "placeholderEmail": "voce@email.com",
+    "placeholderEmail": "voce{'@'}email.com",
     "placeholderPhone": "55 1234 5678",
     "fillRequired": "Preencha todos os campos obrigatórios.",
     "invalidPhone": "Telefone inválido. Apenas números (ex: 5512345678).",

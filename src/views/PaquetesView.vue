@@ -1,5 +1,6 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { usePackageI18n } from '../composables/usePackageI18n'
 import { useSeo } from '../composables/useSeo'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import { paquetesEstaticos } from '@/data/paquetes'
@@ -9,6 +10,7 @@ import vuelo3 from '@/assets/Vuelos/UXdALwELL4smvYbj5CLWGbNtIE.avif'
 import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 
 const { t } = useI18n()
+const { getPackageName, getPackageDesc } = usePackageI18n()
 useScrollReveal()
 
 useSeo({
@@ -45,9 +47,9 @@ function getPackageImage(p, index) {
             <div class="paquete-card__overlay"></div>
           </div>
           <div class="paquete-card__body">
-            <h3 class="paquete-card__name">{{ p.nombre }}</h3>
+            <h3 class="paquete-card__name">{{ getPackageName(p) }}</h3>
             <span class="paquete-card__price">${{ Number(p.precio).toLocaleString('es-MX') }}</span>
-            <p v-if="p.descripcion" class="paquete-card__desc">{{ p.descripcion }}</p>
+            <p v-if="getPackageDesc(p)" class="paquete-card__desc">{{ getPackageDesc(p) }}</p>
             <span class="paquete-card__cta">{{ t('packages.viewDetails') }} →</span>
           </div>
         </router-link>
