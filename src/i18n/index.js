@@ -19,8 +19,8 @@ export const i18n = createI18n({
 })
 
 export const locales = [
-  { code: 'es', name: 'ES Español', flag: '🇪🇸' },
-  { code: 'en', name: 'English', flag: '🇬🇧' },
-  { code: 'fr', name: 'Français', flag: '🇫🇷' },
-  { code: 'pt', name: 'Português', flag: '🇧🇷' }
+  { code: 'es', name: 'ES Español', shortCode: 'ES' },
+  { code: 'en', name: 'English', shortCode: 'GB' },
+  { code: 'fr', name: 'Français', shortCode: 'FR' },
+  { code: 'pt', name: 'Português', shortCode: 'BR' }
 ]

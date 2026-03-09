@@ -1,12 +1,14 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useReservarModal } from '../composables/useReservarModal'
 import { useSeo } from '../composables/useSeo'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import globoColorido from '@/assets/globos/pngtree-beautiful-colorful-hot-air-balloon-isolated-on-white-background-png-image_11928860.png'
 import globoDoble from '@/assets/globos/transparent-of-two-hot-air-balloons-png.png'
 
 const { t, tm } = useI18n()
+const { open: openReservarModal } = useReservarModal()
 useScrollReveal()
 
 useSeo({
@@ -102,7 +104,7 @@ function toggleFaq(i) {
             />
           </div>
         </div>
-        <router-link to="/reservar" class="btn btn-primary about-cta">{{ t('about.reserveCta') }}</router-link>
+        <button type="button" class="btn btn-primary about-cta" @click="openReservarModal()">{{ t('about.reserveCta') }}</button>
         <div class="about-mission animate-on-scroll">
           <h2>{{ t('about.missionTitle') }}</h2>
           <p>{{ t('about.missionText') }}</p>

@@ -1,6 +1,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
+import { useReservarModal } from '../composables/useReservarModal'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '../composables/useSeo'
 import { paquetesEstaticos } from '@/data/paquetes'
@@ -12,6 +13,7 @@ import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 const vueloImages = [vuelo1, vuelo2, vuelo3, vuelo4]
 const { t } = useI18n()
 const route = useRoute()
+const { open: openReservarModal } = useReservarModal()
 const paquete = computed(() =>
   paquetesEstaticos.find(p => p.slug === route.params.slug) || null
 )
@@ -58,12 +60,12 @@ useSeo({
           </ul>
         </div>
         <div class="paquete-detail__actions">
-          <router-link :to="`/reservar?paquete=${paquete.slug}`" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" @click="openReservarModal({ paquete: paquete.slug })">
             {{ t('packages.reserve') }}
-          </router-link>
-          <router-link to="/cotizar" class="btn btn-outline">
+          </button>
+          <button type="button" class="btn btn-outline" @click="openReservarModal({ paquete: paquete.slug })">
             {{ t('experience.requestQuote') }}
-          </router-link>
+          </button>
         </div>
       </div>
     </div>

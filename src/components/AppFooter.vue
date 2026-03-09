@@ -1,15 +1,17 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
+import { useReservarModal } from '../composables/useReservarModal'
 import logoImg from '@/assets/logo/7CotyrWR5Rxspd32kh56jj2tdNk.png'
 
 const { t } = useI18n()
+const { open: openReservarModal } = useReservarModal()
 
 const links = [
   { path: '/', labelKey: 'nav.home' },
   { path: '/vonnavi', labelKey: 'nav.about' },
   { path: '/paquetes', labelKey: 'nav.packages' },
   { path: '/blog', labelKey: 'nav.blog' },
-  { path: '/reservar', labelKey: 'nav.reserve' }
+  { path: '/reservar', labelKey: 'nav.reserve', openModal: true }
 ]
 
 const socialLinks = [
@@ -44,9 +46,10 @@ const socialLinks = [
         </div>
         <div class="footer__links">
           <h4>{{ t('footer.pages') }}</h4>
-          <router-link v-for="link in links" :key="link.path" :to="link.path">
-            {{ t(link.labelKey) }}
-          </router-link>
+          <template v-for="link in links" :key="link.path">
+            <router-link v-if="!link.openModal" :to="link.path">{{ t(link.labelKey) }}</router-link>
+            <button v-else type="button" class="footer__link-btn" @click="openReservarModal()">{{ t(link.labelKey) }}</button>
+          </template>
         </div>
         <div class="footer__contact">
           <h4>{{ t('footer.contact') }}</h4>
@@ -120,8 +123,22 @@ const socialLinks = [
   color: var(--color-text);
 }
 
-.footer__links a {
+.footer__links a,
+.footer__links .footer__link-btn {
   color: var(--color-text-muted);
+}
+
+.footer__link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+
+.footer__link-btn:hover {
+  color: var(--color-primary);
 }
 
 .footer__bottom {

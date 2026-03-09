@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
+import { useReservarModal } from '../composables/useReservarModal'
 import { supabase } from '../lib/supabase'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 import logoImg from '@/assets/logo/7CotyrWR5Rxspd32kh56jj2tdNk.png'
@@ -18,12 +19,13 @@ supabase.auth.onAuthStateChange((_, session) => {
   user.value = session?.user
 })
 
+const { open: openReservarModal } = useReservarModal()
 const navLinks = [
   { path: '/', labelKey: 'nav.home' },
   { path: '/vonnavi', labelKey: 'nav.about' },
   { path: '/paquetes', labelKey: 'nav.packages' },
   { path: '/blog', labelKey: 'nav.blog' },
-  { path: '/reservar', labelKey: 'nav.reserve' },
+  { path: '/reservar', labelKey: 'nav.reserve', openModal: true },
   { path: '/admin', labelKey: 'nav.admin', auth: true }
 ]
 
@@ -66,7 +68,7 @@ const filteredLinks = computed(() =>
             </div>
           </div>
           <router-link
-            v-else
+            v-else-if="!link.openModal"
             :to="link.path"
             class="header-ref__link"
             :class="{ 'header-ref__link--active': route.path === link.path || (link.path !== '/' && route.path.startsWith(link.path)) }"
@@ -74,6 +76,14 @@ const filteredLinks = computed(() =>
           >
             {{ t(link.labelKey) }}
           </router-link>
+          <button
+            v-else
+            type="button"
+            class="header-ref__link header-ref__btn-link"
+            @click="openReservarModal(); menuOpen = false"
+          >
+            {{ t(link.labelKey) }}
+          </button>
         </template>
         <LanguageSwitcher class="header-ref__lang" />
         <router-link v-if="!user" to="/login" class="header-ref__btn-login">
@@ -153,6 +163,13 @@ const filteredLinks = computed(() =>
 .header-ref__link:hover,
 .header-ref__link--active {
   color: var(--color-primary);
+}
+
+.header-ref__btn-link {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
 }
 
 .header-ref__btn-login {

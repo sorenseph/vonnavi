@@ -5,6 +5,7 @@ import AppHeader from './components/AppHeader.vue'
 import AppFooter from './components/AppFooter.vue'
 import WhatsAppButton from './components/WhatsAppButton.vue'
 import LoaderSpinner from './components/LoaderSpinner.vue'
+import ReservarModal from './components/ReservarModal.vue'
 
 const route = useRoute()
 const showWhatsApp = computed(() => !route.meta.requiresAuth)
@@ -34,6 +35,7 @@ onMounted(async () => {
       </router-view>
     </main>
     <AppFooter />
+    <ReservarModal />
     <WhatsAppButton v-if="showWhatsApp" />
   </div>
 </template>

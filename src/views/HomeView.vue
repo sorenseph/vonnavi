@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useReservarModal } from '../composables/useReservarModal'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '../composables/useSeo'
 import { supabase } from '@/lib/supabase'
@@ -43,6 +44,7 @@ const { t, tm, locale } = useI18n()
 const testimonialItems = computed(() => tm('testimonial.items') || [])
 useScrollReveal()
 
+const { open: openReservarModal } = useReservarModal()
 const heroSearch = ref({ fecha: '', adultos: 2, ninos: 0 })
 const totalPassengers = computed(() => heroSearch.value.adultos + heroSearch.value.ninos)
 const minDate = new Date().toISOString().split('T')[0]
@@ -131,7 +133,7 @@ function getTestimonialAvatar(item, items, idx) {
           {{ t('hero.subtitle') }}
         </p>
         <div class="hero__ctas animate-fade-in animate-delay-1">
-          <router-link to="/reservar" class="btn btn-primary">{{ t('hero.bookNow') }}</router-link>
+          <button type="button" class="btn btn-primary" @click="openReservarModal()">{{ t('hero.bookNow') }}</button>
           <router-link to="/paquetes" class="btn btn-outline">{{ t('hero.viewPackages') }}</router-link>
         </div>
         <!-- Barra de reserva - Trevilo/INDOTRAVI: blanca, simple, 3 campos -->
@@ -156,10 +158,10 @@ function getTestimonialAvatar(item, items, idx) {
                 <button type="button" @click="adjustGuests(1)" :disabled="totalPassengers >= 20">+</button>
               </div>
             </div>
-            <router-link :to="{ path: '/reservar', query: heroQuery }" class="hero-search__btn">
+            <button type="button" class="hero-search__btn" @click="openReservarModal({ fecha: heroSearch.fecha, adultos: heroSearch.adultos, ninos: heroSearch.ninos })">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
               {{ t('nav.quote') }}
-            </router-link>
+            </button>
           </div>
         </form>
         <p class="hero__note animate-fade-in animate-delay-3">

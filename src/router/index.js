@@ -32,7 +32,7 @@ const routes = [
   {
     path: '/reservar',
     name: 'Reservar',
-    component: () => import('../views/ReservarView.vue'),
+    component: () => import('../views/ReservarRedirect.vue'),
     meta: { title: 'Reservar | Von Navi', requiresAuth: false }
   },
   {

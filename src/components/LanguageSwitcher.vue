@@ -36,8 +36,7 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
         <line x1="2" y1="12" x2="22" y2="12"/>
         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
       </svg>
-      <span class="lang-switcher__flag">{{ currentLocale.flag }}</span>
-      <span class="lang-switcher__name">{{ currentLocale.name }}</span>
+      <span class="lang-switcher__code">{{ currentLocale.shortCode || currentLocale.code.toUpperCase() }}</span>
       <svg class="lang-switcher__chevron" :class="{ 'lang-switcher__chevron--open': open }" width="12" height="12" viewBox="0 0 12 12">
         <path d="M2.5 4.5L6 8l3.5-3.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
       </svg>
@@ -51,8 +50,8 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
           :class="{ 'lang-switcher__option--active': locale === loc.code }"
           @click="setLocale(loc.code)"
         >
-          <span class="lang-switcher__flag">{{ loc.flag }}</span>
-          <span>{{ loc.name }}</span>
+          <span class="lang-switcher__option-code">{{ loc.shortCode || loc.code.toUpperCase() }}</span>
+          <span class="lang-switcher__option-name">{{ loc.name }}</span>
         </button>
       </div>
     </Transition>
@@ -69,18 +68,20 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 1rem;
-  background: rgba(248, 248, 248, 0.95);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 10px;
-  color: var(--color-text);
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  color: #2d2d2d;
   font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .lang-switcher__trigger:hover {
-  background: rgba(214, 151, 49, 0.15);
-  border-color: var(--color-primary);
+  background: #fafaf8;
+  border-color: rgba(0, 0, 0, 0.12);
 }
 
 .lang-switcher__globe {
@@ -88,19 +89,15 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
   color: var(--color-primary);
 }
 
-.lang-switcher__flag {
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-.lang-switcher__name {
+.lang-switcher__code {
   font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
 .lang-switcher__chevron {
-  margin-left: 0.25rem;
+  margin-left: 0.15rem;
   transition: transform 0.25s;
-  color: var(--color-text-muted);
+  color: #666;
 }
 
 .lang-switcher__chevron--open {
@@ -111,27 +108,27 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
   position: absolute;
   top: calc(100% + 0.5rem);
   right: 0;
-  min-width: 180px;
-  background: var(--color-bg);
-  border: 1px solid rgba(0,0,0,0.08);
+  min-width: 160px;
+  background: #fefcf8;
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  padding: 0.5rem;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+  padding: 0.4rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
   z-index: 100;
 }
 
 .lang-switcher__option {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.5rem;
   width: 100%;
-  padding: 0.7rem 1rem;
+  padding: 0.6rem 0.9rem;
   border: none;
   background: transparent;
-  color: var(--color-text);
-  font-size: 0.95rem;
+  color: #444;
+  font-size: 0.9rem;
   text-align: left;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -141,9 +138,26 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
 }
 
 .lang-switcher__option--active {
-  color: var(--color-primary);
   background: rgba(214, 151, 49, 0.12);
+}
+
+.lang-switcher__option--active .lang-switcher__option-code {
+  color: var(--color-primary);
   font-weight: 600;
+}
+
+.lang-switcher__option--active .lang-switcher__option-name {
+  color: #2d2d2d;
+  font-weight: 500;
+}
+
+.lang-switcher__option-code {
+  font-weight: 500;
+  min-width: 1.8em;
+}
+
+.lang-switcher__option-name {
+  color: #555;
 }
 
 .lang-drop-enter-active,
@@ -154,6 +168,6 @@ onUnmounted(() => document.removeEventListener('click', handleClickOutside))
 .lang-drop-enter-from,
 .lang-drop-leave-to {
   opacity: 0;
-  transform: translateY(-8px);
+  transform: translateY(-6px);
 }
 </style>
