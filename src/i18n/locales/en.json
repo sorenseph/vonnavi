@@ -1,0 +1,254 @@
+{
+  "common": {
+    "scroll": "Scroll"
+  },
+  "whatsapp": {
+    "title": "How can we help you?",
+    "ariaLabel": "Contact via WhatsApp",
+    "question1": "Hi, I would like information about hot air balloon flights",
+    "question2": "What is the price per person for the flight?",
+    "question3": "Do you have availability for [date]?",
+    "question4": "Do you include transportation from CDMX?",
+    "question5": "What packages do you have available?",
+    "reservation": "Hi, I would like to make a reservation for a hot air balloon flight in Teotihuacán",
+    "reserveNow": "Reserve directly"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Von Navi",
+    "packages": "Packages",
+    "blog": "Blog",
+    "reserve": "Reserve",
+    "quote": "Quote",
+    "book": "Book",
+    "admin": "Admin",
+    "login": "Log In"
+  },
+  "about": {
+    "title": "About Von Navi",
+    "intro": "At Globopuerto Von Navi, every flight becomes a unique and unforgettable experience. Thanks to the care and dedication of our team, we ensure that each client enjoys every moment, conveying our commitment and passion in everything we do.",
+    "reserveCta": "Book Your Flight Today",
+    "missionTitle": "Our Mission",
+    "missionText": "We offer hot air balloon flights that are not just a trip, but an experience full of magic and beauty. We want our passengers to take home memories that last a lifetime while enjoying the impressive landscapes of the sunrise, something that can only be experienced from the heights.",
+    "visionTitle": "Our Vision",
+    "visionText": "We want Von Navi to be a trusted and prestigious company, recognized for providing the best flight experiences that leave a special mark on those who choose us.",
+    "clientsTitle": "What our clients say",
+    "locationTitle": "Von Navi Location",
+    "faqTitle": "Von Navi Frequently Asked Questions",
+    "faq": [
+      { "q": "Where do you fly?", "a": "We fly in a balloon every day of the year in the archaeological zone of Teotihuacán." },
+      { "q": "Is it safe to fly in a balloon over Teotihuacán?", "a": "Yes, our pilots are certified and the balloons meet all safety standards." },
+      { "q": "What material are the balloons made of?", "a": "The balloons are made of certified resistant materials for commercial flight." },
+      { "q": "Can you fly in any weather?", "a": "Flights are made in favorable weather conditions, usually at sunrise when winds are milder." },
+      { "q": "Why do you ask for my weight?", "a": "Passenger weight is important for balloon distribution and capacity, ensuring a safe flight." }
+    ]
+  },
+  "hero": {
+    "welcome": "Welcome to Von Navi",
+    "title": "Hot Air Balloon<br />Teotihuacán",
+    "subtitle": "Experience the most thrilling adventure over the pyramids. Dawn from the heights.",
+    "bookNow": "Book Now",
+    "viewPackages": "View Flight Packages",
+    "note": "Our flights depart from the renowned Balloon Port in Teotihuacán, meeting point of the best hot air balloon companies in Teotihuacán. This place offers comfortable facilities, parking and direct access to the archaeological zone."
+  },
+  "experience": {
+    "title": "Hot Air Balloon Teotihuacán: Live the Most Exciting Experience Over the Pyramids",
+    "subtitle": "Discover the best hot air balloon flight in Teotihuacán and watch the sunrise from the heights like never before. Our exclusive balloon ride in Teotihuacán takes you soaring over one of Mexico's most iconic archaeological zones. Led by Miguel Monterrubio, certified pilot with years of experience in balloon flights over Teotihuacán, you will live a safe, magical and absolutely unforgettable experience.",
+    "dawnTitle": "Experience Sunrise Flying in a Balloon Over Teotihuacán",
+    "text1": "During your balloon journey in Teotihuacán, the silence of the sky is only broken by the roar of the burner. The gentle morning breeze and panoramic views connect you with history and nature on a deep level.",
+    "fromSky": "From the air, you will admire:",
+    "item1": "The majestic Pyramids of the Sun and Moon",
+    "item2": "The ancestral urban layout of the ancient city",
+    "item3": "Plazas, causeways and pre-Columbian residential complexes",
+    "extra": "This hot air balloon flight in Teotihuacán is not just a tourist activity, but an opportunity to see the world from a completely new perspective.",
+    "requestQuote": "View Flights"
+  },
+  "services": {
+    "title": "Premium Services for an Unforgettable Balloon Ride",
+    "subtitle": "We offer personalized experiences and additional services to make your hot air balloon flight in Teotihuacán even more special",
+    "champagne": "Champagne",
+    "champagneDesc": "Champagne bottle",
+    "breakfast": "Breakfast",
+    "breakfastDesc": "Extra breakfast",
+    "mariachi": "Mariachi",
+    "mariachiDesc": "Live mariachi",
+    "flowers": "Flowers",
+    "flowersDesc": "Roses or mixed flowers bouquet"
+  },
+  "testimonial": {
+    "sectionTitle": "What our travelers say",
+    "badge": "Top-Rated Excellence",
+    "items": [
+      {
+        "quote": "An unforgettable experience, 100% recommended. You can get picked up, breakfast, balloon, champagne toast. SUBLIME",
+        "author": "Rafael L.",
+        "gender": "m"
+      },
+      {
+        "quote": "The sunrise over the pyramids was magical. The team was very professional and the pilot made us feel safe at all times.",
+        "author": "Maria G.",
+        "gender": "f"
+      },
+      {
+        "quote": "It exceeded all my expectations. From the hotel pickup to the champagne toast, everything was impeccable.",
+        "author": "Carlos M.",
+        "gender": "m"
+      },
+      {
+        "quote": "One of the best experiences of my life. The views of Teotihuacán from the air are incredible.",
+        "author": "Ana R.",
+        "gender": "f"
+      },
+      {
+        "quote": "Excellent service from start to finish. The staff was very friendly and the experience exceeded our expectations.",
+        "author": "Diego S.",
+        "gender": "m"
+      },
+      {
+        "quote": "A perfect gift for my wife. The photos turned out incredible and the memory will last forever.",
+        "author": "Roberto P.",
+        "gender": "m"
+      },
+      {
+        "quote": "Very organized, punctual, and the flight was smooth and exciting. I recommend it without hesitation.",
+        "author": "Laura M.",
+        "gender": "f"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Experiences, tips and news about hot air balloon flights",
+    "viewAll": "View all entries",
+    "loading": "Loading...",
+    "noPosts": "No articles published yet.",
+    "notFound": "Article not found",
+    "backToBlog": "Back to blog"
+  },
+  "packages": {
+    "title": "Flight Packages",
+    "loading": "Loading packages...",
+    "subtitle": "Choose the experience that suits you best",
+    "noPackages": "No packages available. Run the setup-completo.sql script in Supabase to load packages.",
+    "viewDetails": "View details",
+    "viewAll": "View More Packages",
+    "includes": "Includes",
+    "notFound": "Package not found",
+    "reserve": "Reserve"
+  },
+  "footer": {
+    "tagline": "Hot air balloon from CDMX. Teotihuacán archaeological zone.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "addressValue": "San Francisco Mazapa, México-Tulancingo 27.5, 55801 México",
+    "copyright": "© {year} Von Navi Balloon Port"
+  },
+  "quote": {
+    "title": "Request Quote",
+    "successEmail": "We have sent a confirmation email to {email}. We will contact you shortly with your quote details.",
+    "errorSubmit": "Error sending. Please try again.",
+    "subtitle": "Fill out the form and we will contact you with a personalized quote",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Preferred date",
+    "passengers": "Passengers",
+    "package": "Package",
+    "extras": "Extra services",
+    "promoCode": "Promo code",
+    "message": "Message",
+    "totalEst": "Estimated total",
+    "submit": "Submit quote",
+    "sending": "Sending...",
+    "success": "Request received!",
+    "successText": "We will contact you soon at {email} with the details.",
+    "backHome": "Back to home",
+    "placeholderMsg": "Comments or questions...",
+    "placeholderPromo": "e.g. VERANO25",
+    "placeholderEmail": "you@email.com",
+    "placeholderPhone": "55 1234 5678"
+  },
+  "reserve": {
+    "title": "Reserve",
+    "subtitle": "Complete your details and we will contact you with a personalized quote",
+    "submit": "Submit request",
+    "successTitle": "Thank you for your request!",
+    "successText": "Your quote for the hot air balloon flight in Teotihuacán has been received. We have sent you a confirmation email and our team will review availability to contact you shortly."
+  },
+  "book": {
+    "title": "Request Quote",
+    "subtitle": "Complete your details and we will contact you with a personalized quote",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "date": "Preferred flight date",
+    "passengers": "Passengers",
+    "adults": "Adults",
+    "children": "Children",
+    "package": "Package",
+    "selectPackage": "Select package",
+    "notes": "Notes",
+    "submit": "Request quote",
+    "sending": "Sending...",
+    "success": "Request received!",
+    "successText": "We will contact you shortly with the details of your quote.",
+    "backHome": "Back to home",
+    "placeholderNotes": "Additional comments",
+    "placeholderEmail": "you@email.com",
+    "placeholderPhone": "55 1234 5678",
+    "fillRequired": "Please fill in all required fields.",
+    "invalidPhone": "Invalid phone. Numbers only (e.g. 5512345678).",
+    "invalidDate": "Enter a valid date.",
+    "errorSubmit": "Error sending. Please try again."
+  },
+  "login": {
+    "title": "Log In",
+    "subtitle": "Access to the administration panel",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Enter",
+    "sending": "Entering...",
+    "hint": "Test users:"
+  },
+  "admin": {
+    "title": "Administration Panel",
+    "logout": "Log out",
+    "quotations": "Quotations",
+    "reservations": "Reservations",
+    "packages": "Packages",
+    "promotions": "Promotions",
+    "loading": "Loading...",
+    "noQuotations": "No quotations",
+    "noReservations": "No reservations",
+    "noPackages": "No packages",
+    "noPromotions": "No promotions",
+    "folio": "Folio",
+    "state": "State",
+    "date": "Date",
+    "actions": "Actions",
+    "price": "Price",
+    "active": "Active",
+    "yes": "Yes",
+    "no": "No",
+    "addPackage": "Add package",
+    "newPackage": "New package",
+    "status": {
+      "pendiente": "Pending",
+      "contactado": "Contacted",
+      "confirmada": "Confirmed",
+      "pagada": "Paid",
+      "completada": "Completed",
+      "cancelada": "Cancelled"
+    },
+    "promoTitle": "Title",
+    "promoDiscount": "Discount",
+    "promoValidity": "Validity",
+    "save": "Save",
+    "slugOptional": "slug (optional, auto-generated from name)",
+    "includesPlaceholder": "Includes (comma separated)",
+    "imageUrlPlaceholder": "Image URL (e.g. /images/packages/new.jpg)"
+  }
+}

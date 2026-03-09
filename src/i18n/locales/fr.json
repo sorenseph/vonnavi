@@ -1,0 +1,254 @@
+{
+  "common": {
+    "scroll": "Défiler"
+  },
+  "whatsapp": {
+    "title": "Comment pouvons-nous vous aider ?",
+    "ariaLabel": "Contacter par WhatsApp",
+    "question1": "Bonjour, je voudrais des informations sur les vols en montgolfière",
+    "question2": "Quel est le prix par personne pour le vol ?",
+    "question3": "Avez-vous de la disponibilité pour le [date] ?",
+    "question4": "Le transport depuis CDMX est-il inclus ?",
+    "question5": "Quels forfaits avez-vous disponibles ?",
+    "reservation": "Bonjour, je voudrais faire une réservation pour un vol en montgolfière à Teotihuacán",
+    "reserveNow": "Réserver directement"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "Von Navi",
+    "packages": "Forfaits",
+    "blog": "Blog",
+    "reserve": "Réserver",
+    "quote": "Devis",
+    "book": "Réserver",
+    "admin": "Admin",
+    "login": "Connexion"
+  },
+  "about": {
+    "title": "À propos de Von Navi",
+    "intro": "À l'Aérostation Von Navi, chaque vol devient une expérience unique et inoubliable. Grâce au soin et à la dévotion de notre équipe, nous nous assurons que chaque client profite de chaque instant.",
+    "reserveCta": "Réservez Votre Vol Aujourd'hui",
+    "missionTitle": "Notre Mission",
+    "missionText": "Nous offrons des vols en montgolfière qui ne sont pas qu'un simple voyage, mais une expérience pleine de magie et de beauté.",
+    "visionTitle": "Notre Vision",
+    "visionText": "Nous voulons que Von Navi soit une entreprise de confiance et de prestige, reconnue pour offrir les meilleures expériences de vol.",
+    "clientsTitle": "Ce que disent nos clients",
+    "locationTitle": "Emplacement Von Navi",
+    "faqTitle": "Questions Fréquentes Von Navi",
+    "faq": [
+      { "q": "Où effectuez-vous les vols?", "a": "Nous volons en montgolfière tous les jours de l'année dans la zone archéologique de Teotihuacán." },
+      { "q": "Est-il sûr de voler en montgolfière au-dessus de Teotihuacán?", "a": "Oui, nos pilotes sont certifiés et les montgolfières respectent toutes les normes de sécurité." },
+      { "q": "De quel matériau sont faites les montgolfières?", "a": "Les montgolfières sont fabriquées avec des matériaux résistants et certifiés." },
+      { "q": "Peut-on voler par tous les temps?", "a": "Les vols sont effectués par des conditions météo favorables, généralement à l'aube." },
+      { "q": "Pourquoi demandez-vous mon poids?", "a": "Le poids est important pour la répartition et la capacité du ballon, garantissant un vol sûr." }
+    ]
+  },
+  "hero": {
+    "welcome": "Bienvenue chez Von Navi",
+    "title": "Vol en Montgolfière<br />Teotihuacán",
+    "subtitle": "Vivez l'expérience la plus palpitante au-dessus des pyramides. L'aube depuis les hauteurs.",
+    "bookNow": "Réserver",
+    "viewPackages": "Voir les forfaits de vol",
+    "note": "Nos vols partent de la renommée Aérostation de Teotihuacán, lieu de rencontre des meilleures entreprises de montgolfières à Teotihuacán. Ce lieu offre des installations confortables, un parking et un accès direct à la zone archéologique."
+  },
+  "experience": {
+    "title": "Vol en Montgolfière Teotihuacán : Vivez l'Expérience la Plus Palpitante au-dessus des Pyramides",
+    "subtitle": "Découvrez le meilleur vol en montgolfière à Teotihuacán et contemplez l'aube depuis les hauteurs comme jamais auparavant. Notre exclusif vol en montgolfière à Teotihuacán vous emmène survoler l'une des zones archéologiques les plus emblématiques du Mexique. Dirigé par Miguel Monterrubio, pilote certifié avec des années d'expérience en vols en montgolfière au-dessus de Teotihuacán, vous vivrez une expérience sûre, magique et absolument inoubliable.",
+    "dawnTitle": "Vivez l'Aurore en Volant en Montgolfière au-dessus de Teotihuacán",
+    "text1": "Pendant votre voyage en montgolfière à Teotihuacán, le silence du ciel n'est interrompu que par le rugissement du brûleur. La douce brise matinale et les vues panoramiques vous relient à l'histoire et à la nature en profondeur.",
+    "fromSky": "Depuis les airs, vous pourrez admirer :",
+    "item1": "Les majestueuses pyramides du Soleil et de la Lune",
+    "item2": "Le plan urbain ancestral de l'ancienne ville",
+    "item3": "Les places, chaussées et complexes résidentiels précolombiens",
+    "extra": "Ce vol en montgolfière à Teotihuacán n'est pas qu'une simple activité touristique, mais une opportunité de voir le monde sous une perspective complètement nouvelle.",
+    "requestQuote": "Voir les vols"
+  },
+  "services": {
+    "title": "Services Premium pour un Vol en Montgolfière Inoubliable",
+    "subtitle": "Nous offrons des expériences personnalisées et des services supplémentaires pour rendre votre vol en montgolfière à Teotihuacán encore plus spécial",
+    "champagne": "Champagne",
+    "champagneDesc": "Bouteille de champagne",
+    "breakfast": "Petit-déjeuner",
+    "breakfastDesc": "Petit-déjeuner supplémentaire",
+    "mariachi": "Mariachi",
+    "mariachiDesc": "Mariachi en direct",
+    "flowers": "Fleurs",
+    "flowersDesc": "Bouquet de roses ou fleurs variées"
+  },
+  "testimonial": {
+    "sectionTitle": "Ce que disent nos voyageurs",
+    "badge": "Excellence Top-Rated",
+    "items": [
+      {
+        "quote": "Une expérience inoubliable, 100% recommandé. Possibilité de prise en charge, petit-déjeuner, montgolfière, toast au champagne. SUBLIME",
+        "author": "Rafael L.",
+        "gender": "m"
+      },
+      {
+        "quote": "L'aube sur les pyramides était magique. L'équipe très professionnelle et le pilote nous a fait nous sentir en sécurité à tout moment.",
+        "author": "Maria G.",
+        "gender": "f"
+      },
+      {
+        "quote": "A dépassé toutes mes attentes. De la prise en charge à l'hôtel au toast au champagne, tout impeccable.",
+        "author": "Carlos M.",
+        "gender": "m"
+      },
+      {
+        "quote": "Une des meilleures expériences de ma vie. Les vues de Teotihuacán depuis les airs sont incroyables.",
+        "author": "Ana R.",
+        "gender": "f"
+      },
+      {
+        "quote": "Excellente prestation du début à la fin. Le personnel très aimable et l'expérience a dépassé nos attentes.",
+        "author": "Diego S.",
+        "gender": "m"
+      },
+      {
+        "quote": "Un cadeau parfait pour ma femme. Les photos sont incroyables et le souvenir restera à jamais.",
+        "author": "Roberto P.",
+        "gender": "m"
+      },
+      {
+        "quote": "Très organisés, ponctuels et le vol fut doux et excitant. Je recommande sans hésitation.",
+        "author": "Laura M.",
+        "gender": "f"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Expériences, conseils et actualités sur les vols en montgolfière",
+    "viewAll": "Voir toutes les entrées",
+    "loading": "Chargement...",
+    "noPosts": "Aucun article publié pour le moment.",
+    "notFound": "Article introuvable",
+    "backToBlog": "Retour au blog"
+  },
+  "packages": {
+    "title": "Forfaits de Vol",
+    "loading": "Chargement des forfaits...",
+    "subtitle": "Choisissez l'expérience qui vous convient le mieux",
+    "noPackages": "Aucun forfait disponible. Exécutez le script setup-completo.sql dans Supabase pour charger les forfaits.",
+    "viewDetails": "Voir les détails",
+    "viewAll": "Voir Plus de Forfaits",
+    "includes": "Inclus",
+    "notFound": "Forfait introuvable",
+    "reserve": "Réserver"
+  },
+  "footer": {
+    "tagline": "Vol en montgolfière depuis Mexico. Zone archéologique de Teotihuacán.",
+    "pages": "Pages",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Téléphone",
+    "address": "Adresse",
+    "addressValue": "San Francisco Mazapa, México-Tulancingo 27.5, 55801 México",
+    "copyright": "© {year} Aérostation Von Navi"
+  },
+  "quote": {
+    "title": "Demander un Devis",
+    "subtitle": "Remplissez le formulaire et nous vous contacterons avec un devis personnalisé",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "date": "Date préférée",
+    "passengers": "Passagers",
+    "package": "Forfait",
+    "extras": "Services supplémentaires",
+    "promoCode": "Code promo",
+    "message": "Message",
+    "totalEst": "Total estimé",
+    "submit": "Envoyer le devis",
+    "sending": "Envoi...",
+    "success": "Demande reçue !",
+    "successText": "Nous vous contacterons bientôt à {email} avec les détails.",
+    "successEmail": "Nous avons envoyé un email de confirmation à {email}. Nous vous contacterons prochainement avec les détails de votre devis.",
+    "errorSubmit": "Erreur lors de l'envoi. Veuillez réessayer.",
+    "backHome": "Retour à l'accueil",
+    "placeholderMsg": "Commentaires ou questions...",
+    "placeholderPromo": "Ex: VERANO25",
+    "placeholderEmail": "vous@email.com",
+    "placeholderPhone": "55 1234 5678"
+  },
+  "reserve": {
+    "title": "Réserver",
+    "subtitle": "Complétez vos informations et nous vous contacterons avec une offre personnalisée",
+    "submit": "Envoyer la demande",
+    "successTitle": "Merci pour votre demande !",
+    "successText": "Votre demande de vol en montgolfière à Teotihuacán a bien été reçue. Nous vous avons envoyé un email de confirmation et notre équipe vous contactera sous peu."
+  },
+  "book": {
+    "title": "Réserver un Vol",
+    "subtitle": "Complétez vos informations pour confirmer votre réservation",
+    "name": "Nom",
+    "email": "Email",
+    "phone": "Téléphone",
+    "date": "Date du vol",
+    "passengers": "Passagers",
+    "adults": "Adultes",
+    "children": "Enfants",
+    "package": "Forfait",
+    "selectPackage": "Sélectionner le forfait",
+    "notes": "Notes",
+    "submit": "Confirmer la réservation",
+    "sending": "Traitement...",
+    "success": "Réservation envoyée !",
+    "successText": "Vous recevrez un email de confirmation avec les détails. Nous vous contacterons pour finaliser le paiement.",
+    "backHome": "Retour à l'accueil",
+    "placeholderNotes": "Commentaires supplémentaires",
+    "placeholderEmail": "vous@email.com",
+    "placeholderPhone": "55 1234 5678",
+    "fillRequired": "Veuillez remplir tous les champs obligatoires.",
+    "invalidPhone": "Téléphone invalide. Chiffres uniquement (ex: 5512345678).",
+    "invalidDate": "Entrez une date valide.",
+    "errorSubmit": "Erreur lors de l'envoi. Veuillez réessayer."
+  },
+  "login": {
+    "title": "Connexion",
+    "subtitle": "Accès au panneau d'administration",
+    "email": "Email",
+    "password": "Mot de passe",
+    "submit": "Entrer",
+    "sending": "Connexion...",
+    "hint": "Utilisateurs de test :"
+  },
+  "admin": {
+    "title": "Panneau d'Administration",
+    "logout": "Déconnexion",
+    "quotations": "Devis",
+    "reservations": "Réservations",
+    "packages": "Forfaits",
+    "promotions": "Promotions",
+    "loading": "Chargement...",
+    "noQuotations": "Aucun devis",
+    "noReservations": "Aucune réservation",
+    "noPackages": "Aucun forfait",
+    "noPromotions": "Aucune promotion",
+    "folio": "Folio",
+    "state": "État",
+    "date": "Date",
+    "actions": "Actions",
+    "price": "Prix",
+    "active": "Actif",
+    "yes": "Oui",
+    "no": "Non",
+    "addPackage": "Ajouter forfait",
+    "newPackage": "Nouveau forfait",
+    "status": {
+      "pendiente": "En attente",
+      "contactado": "Contacté",
+      "confirmada": "Confirmé",
+      "pagada": "Payé",
+      "completada": "Terminé",
+      "cancelada": "Annulé"
+    },
+    "promoTitle": "Titre",
+    "promoDiscount": "Réduction",
+    "promoValidity": "Validité",
+    "save": "Enregistrer",
+    "slugOptional": "slug (optionnel, généré du nom)",
+    "includesPlaceholder": "Inclus (séparés par des virgules)",
+    "imageUrlPlaceholder": "URL image (ex: /images/packages/nouveau.jpg)"
+  }
+}

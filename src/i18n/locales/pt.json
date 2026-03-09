@@ -1,0 +1,254 @@
+{
+  "common": {
+    "scroll": "Rolar"
+  },
+  "whatsapp": {
+    "title": "Como podemos ajudar?",
+    "ariaLabel": "Contatar via WhatsApp",
+    "question1": "Olá, gostaria de informações sobre voos de balão",
+    "question2": "Qual é o preço por pessoa para o voo?",
+    "question3": "Vocês têm disponibilidade para [data]?",
+    "question4": "O transporte de CDMX está incluído?",
+    "question5": "Quais pacotes vocês têm disponíveis?",
+    "reservation": "Olá, gostaria de fazer uma reserva para voo de balão em Teotihuacán",
+    "reserveNow": "Reservar diretamente"
+  },
+  "nav": {
+    "home": "Início",
+    "about": "Von Navi",
+    "packages": "Pacotes",
+    "blog": "Blog",
+    "reserve": "Reservar",
+    "quote": "Orçamento",
+    "book": "Reservar",
+    "admin": "Admin",
+    "login": "Entrar"
+  },
+  "about": {
+    "title": "Sobre Von Navi",
+    "intro": "No Aeroporto de Balões Von Navi, cada voo se transforma em uma experiência única e inesquecível. Graças ao cuidado e dedicação da nossa equipe, garantimos que cada cliente aproveite cada momento, transmitindo nosso compromisso e paixão em tudo o que fazemos.",
+    "reserveCta": "Reserve Seu Voo Hoje",
+    "missionTitle": "Nossa Missão",
+    "missionText": "Oferecemos voos em aerostáticos que não são apenas uma viagem, mas uma experiência cheia de magia e beleza. Queremos que nossos passageiros levem lembranças que durem toda a vida enquanto desfrutam das paisagens impressionantes do amanhecer.",
+    "visionTitle": "Nossa Visão",
+    "visionText": "Queremos que a Von Navi seja uma empresa de confiança e prestígio, reconhecida por oferecer as melhores experiências de voo.",
+    "clientsTitle": "O que dizem nossos clientes",
+    "locationTitle": "Localização Von Navi",
+    "faqTitle": "Perguntas Frequentes Von Navi",
+    "faq": [
+      { "q": "Onde realizam os voos?", "a": "Voamos de balão todos os dias do ano na zona arqueológica de Teotihuacán." },
+      { "q": "É seguro voar de balão sobre Teotihuacán?", "a": "Sim, nossos pilotos são certificados e os balões cumprem todas as normas de segurança." },
+      { "q": "De que material são feitos os balões?", "a": "Os balões são fabricados com materiais resistentes e certificados." },
+      { "q": "Pode voar em qualquer clima?", "a": "Os voos são realizados em condições climáticas favoráveis, geralmente ao amanhecer." },
+      { "q": "Por que perguntam meu peso?", "a": "O peso é importante para a distribuição e capacidade do balão, garantindo um voo seguro." }
+    ]
+  },
+  "hero": {
+    "welcome": "Bem-vindo ao Von Navi",
+    "title": "Voo de Balão<br />Teotihuacán",
+    "subtitle": "Viva a experiência mais emocionante sobre as pirâmides. O amanhecer das alturas.",
+    "bookNow": "Reservar Agora",
+    "viewPackages": "Ver Pacotes de Voo",
+    "note": "Nossos voos partem do reconhecido Aeroporto de Balões em Teotihuacán, ponto de encontro das melhores empresas de balões em Teotihuacán. Este lugar oferece instalações confortáveis, estacionamento e acesso direto à zona arqueológica."
+  },
+  "experience": {
+    "title": "Voo de Balão Teotihuacán: Viva a Experiência Mais Emocionante Sobre as Pirâmides",
+    "subtitle": "Descubra o melhor voo de balão em Teotihuacán e contemple o amanhecer das alturas como nunca antes. Nosso exclusivo passeio de balão em Teotihuacán leva você a cruzar os céus sobre uma das zonas arqueológicas mais icônicas do México. Liderado por Miguel Monterrubio, piloto certificado com anos de experiência em voos de balão sobre Teotihuacán, você viverá uma experiência segura, mágica e absolutamente inesquecível.",
+    "dawnTitle": "Viva o Amanhecer Voando de Balão Sobre Teotihuacán",
+    "text1": "Durante sua viagem de balão em Teotihuacán, o silêncio do céu só é interrompido pelo rugido do queimador. A suave brisa matinal e as vistas panorâmicas conectam você com a história e a natureza em um nível profundo.",
+    "fromSky": "Do ar, você poderá admirar:",
+    "item1": "As majestosas pirâmides do Sol e da Lua",
+    "item2": "O traçado urbano ancestral da antiga cidade",
+    "item3": "Praças, calçadas e complexos residenciais pré-hispânicos",
+    "extra": "Este voo de balão em Teotihuacán não é apenas uma atividade turística, mas uma oportunidade de ver o mundo de uma perspectiva completamente nova.",
+    "requestQuote": "Ver Voos"
+  },
+  "services": {
+    "title": "Serviços Premium para um Passeio de Balão Inesquecível",
+    "subtitle": "Oferecemos experiências personalizadas e serviços adicionais para tornar seu voo de balão em Teotihuacán ainda mais especial",
+    "champagne": "Champanhe",
+    "champagneDesc": "Garrafa de champanhe",
+    "breakfast": "Café da manhã",
+    "breakfastDesc": "Café da manhã extra",
+    "mariachi": "Mariachi",
+    "mariachiDesc": "Mariachi ao vivo",
+    "flowers": "Flores",
+    "flowersDesc": "Buquê de rosas ou flores variadas"
+  },
+  "testimonial": {
+    "sectionTitle": "O que dizem nossos viajantes",
+    "badge": "Excelência Top-Rated",
+    "items": [
+      {
+        "quote": "Uma experiência inesquecível, 100% recomendado. Possibilidade de transporte, café da manhã, balão, brinde com champanhe. SUBLIME",
+        "author": "Rafael L.",
+        "gender": "m"
+      },
+      {
+        "quote": "O amanhecer sobre as pirâmides foi mágico. A equipe muito profissional e o piloto nos fez sentir seguros o tempo todo.",
+        "author": "Maria G.",
+        "gender": "f"
+      },
+      {
+        "quote": "Superou todas as minhas expectativas. Da busca no hotel ao brinde com champanhe, tudo impecável.",
+        "author": "Carlos M.",
+        "gender": "m"
+      },
+      {
+        "quote": "Uma das melhores experiências da minha vida. As vistas de Teotihuacán do ar são incríveis.",
+        "author": "Ana R.",
+        "gender": "f"
+      },
+      {
+        "quote": "Excelente serviço do começo ao fim. A equipe muito amável e a experiência superou nossas expectativas.",
+        "author": "Diego S.",
+        "gender": "m"
+      },
+      {
+        "quote": "Um presente perfeito para minha esposa. As fotos ficaram incríveis e a lembrança ficará para sempre.",
+        "author": "Roberto P.",
+        "gender": "m"
+      },
+      {
+        "quote": "Muito organizados, pontuais e o voo foi suave e emocionante. Recomendo sem hesitar.",
+        "author": "Laura M.",
+        "gender": "f"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Experiências, dicas e novidades sobre voos de balão",
+    "viewAll": "Ver todas as entradas",
+    "loading": "Carregando...",
+    "noPosts": "Ainda não há artigos publicados.",
+    "notFound": "Artigo não encontrado",
+    "backToBlog": "Voltar ao blog"
+  },
+  "packages": {
+    "title": "Pacotes de Voo",
+    "loading": "Carregando pacotes...",
+    "subtitle": "Escolha a experiência que mais lhe convém",
+    "noPackages": "Nenhum pacote disponível. Execute o script setup-completo.sql no Supabase para carregar os pacotes.",
+    "viewDetails": "Ver detalhes",
+    "viewAll": "Ver Mais Pacotes",
+    "includes": "Inclui",
+    "notFound": "Pacote não encontrado",
+    "reserve": "Reservar"
+  },
+  "footer": {
+    "tagline": "Voo de balão desde CDMX. Zona arqueológica de Teotihuacán.",
+    "pages": "Páginas",
+    "contact": "Contato",
+    "email": "Email",
+    "phone": "Telefone",
+    "address": "Endereço",
+    "addressValue": "San Francisco Mazapa, México-Tulancingo 27.5, 55801 México",
+    "copyright": "© {year} Aeroporto Von Navi"
+  },
+  "quote": {
+    "title": "Solicitar Orçamento",
+    "subtitle": "Preencha o formulário e entraremos em contato com um orçamento personalizado",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefone",
+    "date": "Data preferida",
+    "passengers": "Passageiros",
+    "package": "Pacote",
+    "extras": "Serviços extras",
+    "promoCode": "Código promocional",
+    "message": "Mensagem",
+    "totalEst": "Total estimado",
+    "submit": "Enviar orçamento",
+    "sending": "Enviando...",
+    "success": "Solicitação recebida!",
+    "successText": "Entraremos em contato em breve em {email} com os detalhes.",
+    "successEmail": "Enviamos um email de confirmação para {email}. Entraremos em contato em breve com os detalhes do seu orçamento.",
+    "errorSubmit": "Erro ao enviar. Tente novamente.",
+    "backHome": "Voltar ao início",
+    "placeholderMsg": "Comentários ou perguntas...",
+    "placeholderPromo": "Ex: VERANO25",
+    "placeholderEmail": "voce@email.com",
+    "placeholderPhone": "55 1234 5678"
+  },
+  "reserve": {
+    "title": "Reservar",
+    "subtitle": "Preencha seus dados e entraremos em contato com uma cotação personalizada",
+    "submit": "Enviar solicitação",
+    "successTitle": "Obrigado pela sua solicitação!",
+    "successText": "Sua cotação para o voo de balão em Teotihuacán foi recebida. Enviamos um email de confirmação e nossa equipe entrará em contato em breve."
+  },
+  "book": {
+    "title": "Reservar Voo",
+    "subtitle": "Preencha seus dados para confirmar sua reserva",
+    "name": "Nome",
+    "email": "Email",
+    "phone": "Telefone",
+    "date": "Data do voo",
+    "passengers": "Passageiros",
+    "adults": "Adultos",
+    "children": "Crianças",
+    "package": "Pacote",
+    "selectPackage": "Selecionar pacote",
+    "notes": "Observações",
+    "submit": "Confirmar reserva",
+    "sending": "Processando...",
+    "success": "Reserva enviada!",
+    "successText": "Você receberá um email de confirmação com os detalhes. Entraremos em contato para completar o pagamento.",
+    "backHome": "Voltar ao início",
+    "placeholderNotes": "Comentários adicionais",
+    "placeholderEmail": "voce@email.com",
+    "placeholderPhone": "55 1234 5678",
+    "fillRequired": "Preencha todos os campos obrigatórios.",
+    "invalidPhone": "Telefone inválido. Apenas números (ex: 5512345678).",
+    "invalidDate": "Insira uma data válida.",
+    "errorSubmit": "Erro ao enviar. Tente novamente."
+  },
+  "login": {
+    "title": "Entrar",
+    "subtitle": "Acesso ao painel de administração",
+    "email": "Email",
+    "password": "Senha",
+    "submit": "Entrar",
+    "sending": "Entrando...",
+    "hint": "Usuários de teste:"
+  },
+  "admin": {
+    "title": "Painel de Administração",
+    "logout": "Sair",
+    "quotations": "Orçamentos",
+    "reservations": "Reservas",
+    "packages": "Pacotes",
+    "promotions": "Promoções",
+    "loading": "Carregando...",
+    "noQuotations": "Nenhum orçamento",
+    "noReservations": "Nenhuma reserva",
+    "noPackages": "Nenhum pacote",
+    "noPromotions": "Nenhuma promoção",
+    "folio": "Folio",
+    "state": "Estado",
+    "date": "Data",
+    "actions": "Ações",
+    "price": "Preço",
+    "active": "Ativo",
+    "yes": "Sim",
+    "no": "Não",
+    "addPackage": "Adicionar pacote",
+    "newPackage": "Novo pacote",
+    "status": {
+      "pendiente": "Pendente",
+      "contactado": "Contactado",
+      "confirmada": "Confirmado",
+      "pagada": "Pago",
+      "completada": "Concluído",
+      "cancelada": "Cancelado"
+    },
+    "promoTitle": "Título",
+    "promoDiscount": "Desconto",
+    "promoValidity": "Validade",
+    "save": "Guardar",
+    "slugOptional": "slug (opcional, gerado do nome)",
+    "includesPlaceholder": "Inclui (separado por vírgulas)",
+    "imageUrlPlaceholder": "URL da imagem (ex: /images/pacotes/novo.jpg)"
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "common": {
+    "scroll": "Desplazar"
+  },
+  "whatsapp": {
+    "title": "¿En qué podemos ayudarte?",
+    "ariaLabel": "Contactar por WhatsApp",
+    "question1": "Hola, quisiera información sobre los vuelos en globo",
+    "question2": "¿Cuál es el precio por persona para el vuelo?",
+    "question3": "¿Tienen disponibilidad para [fecha]?",
+    "question4": "¿Incluyen transporte desde CDMX?",
+    "question5": "¿Qué paquetes tienen disponibles?",
+    "reservation": "Hola, quisiera hacer una reservación para vuelo en globo en Teotihuacán",
+    "reserveNow": "Reservar directamente"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Von Navi",
+    "packages": "Paquetes",
+    "blog": "Blog",
+    "reserve": "Reservar",
+    "quote": "Cotizar",
+    "book": "Reservar vuelo",
+    "admin": "Admin",
+    "login": "Iniciar Sesión"
+  },
+  "about": {
+    "title": "Acerca De Von Navi",
+    "intro": "En Globopuerto Von Navi, cada vuelo se convierte en una experiencia única e inolvidable. Gracias al cuidado y dedicación de nuestro equipo, nos aseguramos de que cada cliente disfrute de cada momento, transmitiendo nuestro compromiso y pasión en todo lo que hacemos.",
+    "reserveCta": "Reserva Tu Vuelo Hoy",
+    "missionTitle": "Nuestra Misión",
+    "missionText": "Ofrecemos vuelos en aerostáticos que no solo son un viaje, sino una experiencia llena de magia y belleza. Queremos que nuestros pasajeros se lleven recuerdos que duren toda la vida mientras disfrutan de los paisajes impresionantes del amanecer, algo que solo se puede vivir desde las alturas.",
+    "visionTitle": "Nuestra Visión",
+    "visionText": "Queremos que Von Navi sea una empresa de confianza y prestigio, reconocida por brindar las mejores experiencias de vuelo, que dejan una huella especial en quienes nos eligen.",
+    "clientsTitle": "Qué dicen nuestros clientes",
+    "locationTitle": "Ubicación De Von Navi",
+    "faqTitle": "Preguntas Frecuentes De Von Navi",
+    "faq": [
+      { "q": "¿Dónde realizan los vuelos?", "a": "Volamos en globo todos los días del año en la zona arqueológica de Teotihuacán" },
+      { "q": "¿Es seguro volar en globo sobre Teotihuacán?", "a": "Sí, nuestros pilotos están certificados y los globos cumplen con todas las normas de seguridad." },
+      { "q": "¿De qué material están hechos los globos?", "a": "Los globos están fabricados con materiales resistentes y certificados para vuelo comercial." },
+      { "q": "¿Se puede volar en cualquier clima?", "a": "Los vuelos se realizan en condiciones climáticas favorables, generalmente al amanecer cuando los vientos son más suaves." },
+      { "q": "¿Por qué me preguntan mi peso?", "a": "El peso de los pasajeros es importante para la distribución y capacidad del globo, garantizando un vuelo seguro." }
+    ]
+  },
+  "hero": {
+    "welcome": "Bienvenido a Von Navi",
+    "title": "Vuelo en Globo<br />Teotihuacán",
+    "subtitle": "Vive la experiencia más emocionante sobre las pirámides. Amanece desde las alturas.",
+    "bookNow": "Reservar Ahora",
+    "viewPackages": "Ver Paquetes De Vuelo",
+    "note": "Nuestros vuelos parten del reconocido Globopuerto en Teotihuacán, punto de encuentro de las mejores empresas de globos aerostáticos en Teotihuacán. Este lugar ofrece instalaciones cómodas, estacionamiento y acceso directo a la zona arqueológica."
+  },
+  "experience": {
+    "title": "Vuelo en Globo Teotihuacán: Vive la Experiencia Más Emocionante Sobre las Pirámides",
+    "subtitle": "Descubre el mejor vuelo en globo Teotihuacán y contempla el amanecer desde las alturas como nunca antes. Nuestro exclusivo paseo en globo aerostático en Teotihuacán te lleva a surcar los cielos sobre una de las zonas arqueológicas más icónicas de México. Dirigido por Miguel Monterrubio, piloto certificado con años de experiencia en vuelos en globo sobre Teotihuacán, vivirás una experiencia segura, mágica y absolutamente inolvidable.",
+    "dawnTitle": "Vive el Amanecer Volando en Globo Sobre Teotihuacán",
+    "text1": "Durante tu viaje en globo en Teotihuacán, el silencio del cielo solo es interrumpido por el rugido del quemador. La suave brisa matutina y las vistas panorámicas te conectan con la historia y la naturaleza en un nivel profundo.",
+    "fromSky": "Desde el aire, podrás admirar:",
+    "item1": "Las majestuosas pirámides del Sol y la Luna",
+    "item2": "El trazo urbano ancestral de la antigua ciudad",
+    "item3": "Plazas, calzadas y complejos residenciales prehispánicos",
+    "extra": "Este vuelo en globo aerostático en Teotihuacán no es solo una actividad turística, sino una oportunidad de ver el mundo desde una perspectiva completamente nueva.",
+    "requestQuote": "Ver Vuelos"
+  },
+  "services": {
+    "title": "Servicios Premium para un Paseo en Globo Inolvidable",
+    "subtitle": "Ofrecemos experiencias personalizadas y servicios adicionales para que tu vuelo en globo en Teotihuacán sea aún más especial",
+    "champagne": "Champagne",
+    "champagneDesc": "Botella de champagne",
+    "breakfast": "Desayuno",
+    "breakfastDesc": "Desayuno extra",
+    "mariachi": "Mariachi",
+    "mariachiDesc": "Mariachi en vivo",
+    "flowers": "Flores",
+    "flowersDesc": "Ramo de rosas o flores variadas"
+  },
+  "testimonial": {
+    "sectionTitle": "Lo que dicen nuestros viajeros",
+    "badge": "Top-Rated Excellence",
+    "items": [
+      {
+        "quote": "Una experiencia inolvidable, 100% recomendado. Tienes la posibilidad de que te recojan, desayuno, globo, brindis con champán. SUBLIME",
+        "author": "Rafael L.",
+        "gender": "m"
+      },
+      {
+        "quote": "El amanecer sobre las pirámides fue mágico. El equipo muy profesional y el piloto nos hizo sentir seguros en todo momento.",
+        "author": "María G.",
+        "gender": "f"
+      },
+      {
+        "quote": "Superó todas mis expectativas. Desde el recojo en el hotel hasta el brindis con champagne, todo impecable.",
+        "author": "Carlos M.",
+        "gender": "m"
+      },
+      {
+        "quote": "Una de las mejores experiencias de mi vida. Las vistas de Teotihuacán desde el aire son increíbles.",
+        "author": "Ana R.",
+        "gender": "f"
+      },
+      {
+        "quote": "Excelente servicio de principio a fin. El personal muy amable y la experiencia superó lo que esperábamos.",
+        "author": "Diego S.",
+        "gender": "m"
+      },
+      {
+        "quote": "Un regalo perfecto para mi esposa. Las fotos quedaron increíbles y el recuerdo quedará para siempre.",
+        "author": "Roberto P.",
+        "gender": "m"
+      },
+      {
+        "quote": "Muy organizados, puntuales y el vuelo fue suave y emocionante. Lo recomiendo sin dudar.",
+        "author": "Laura M.",
+        "gender": "f"
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Experiencias, consejos y novedades sobre vuelos en globo",
+    "viewAll": "Ver todas las entradas",
+    "loading": "Cargando...",
+    "noPosts": "Aún no hay artículos publicados.",
+    "notFound": "Artículo no encontrado",
+    "backToBlog": "Volver al blog"
+  },
+  "packages": {
+    "title": "Paquetes de Vuelo",
+    "loading": "Cargando paquetes...",
+    "subtitle": "Elige la experiencia que más te convenga",
+    "noPackages": "No hay paquetes disponibles. Ejecuta el script setup-completo.sql en Supabase para cargar los paquetes.",
+    "viewDetails": "Ver detalles",
+    "viewAll": "Ver Más Paquetes",
+    "includes": "Incluye",
+    "notFound": "Paquete no encontrado",
+    "reserve": "Reservar"
+  },
+  "footer": {
+    "tagline": "Vuelo en globo desde CDMX. Zona arqueológica de Teotihuacán.",
+    "pages": "Páginas",
+    "contact": "Contacto",
+    "email": "Email",
+    "phone": "Teléfono",
+    "address": "Dirección",
+    "addressValue": "San Francisco Mazapa, México-Tulancingo 27.5, 55801 México",
+    "copyright": "© {year} Globopuerto Von Navi"
+  },
+  "quote": {
+    "title": "Solicitar Cotización",
+    "subtitle": "Completa el formulario y te contactaremos por correo con los detalles de tu cotización",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "date": "Fecha preferida",
+    "passengers": "Pasajeros",
+    "package": "Paquete",
+    "extras": "Servicios extra",
+    "promoCode": "Código promocional",
+    "message": "Mensaje",
+    "totalEst": "Total estimado",
+    "submit": "Enviar cotización",
+    "sending": "Enviando...",
+    "success": "¡Solicitud recibida!",
+    "successText": "Te contactaremos pronto a {email} con los detalles.",
+    "successEmail": "Hemos enviado un correo de confirmación a {email}. Nos pondremos en contacto contigo pronto con los detalles de tu cotización.",
+    "errorSubmit": "Error al enviar. Intenta de nuevo.",
+    "backHome": "Volver al inicio",
+    "placeholderMsg": "Comentarios o preguntas...",
+    "placeholderPromo": "Ej: VERANO25",
+    "placeholderEmail": "tu@email.com",
+    "placeholderPhone": "55 1234 5678"
+  },
+  "reserve": {
+    "title": "Reservar",
+    "subtitle": "Completa tus datos y te contactaremos con una cotización personalizada",
+    "submit": "Enviar solicitud",
+    "successTitle": "¡Gracias por tu solicitud!",
+    "successText": "Tu cotización para el vuelo en globo en Teotihuacán ha sido recibida. Te hemos enviado un correo de confirmación y nuestro equipo revisará disponibilidad para contactarte en breve."
+  },
+  "book": {
+    "title": "Cotizar Vuelo",
+    "subtitle": "Completa tus datos y te contactaremos con una cotización personalizada",
+    "name": "Nombre",
+    "email": "Email",
+    "phone": "Teléfono",
+    "date": "Fecha preferida del vuelo",
+    "passengers": "Pasajeros",
+    "adults": "Adultos",
+    "children": "Niños",
+    "package": "Paquete",
+    "selectPackage": "Seleccionar paquete",
+    "notes": "Notas",
+    "submit": "Solicitar cotización",
+    "sending": "Enviando...",
+    "success": "¡Solicitud recibida!",
+    "successText": "Te contactaremos pronto con los detalles de tu cotización.",
+    "backHome": "Volver al inicio",
+    "placeholderNotes": "Comentarios adicionales",
+    "placeholderEmail": "tu@email.com",
+    "placeholderPhone": "55 1234 5678",
+    "fillRequired": "Completa todos los campos obligatorios.",
+    "invalidPhone": "Teléfono inválido. Solo números (ej: 5512345678).",
+    "invalidDate": "Ingresa una fecha válida.",
+    "errorSubmit": "Error al enviar. Intenta de nuevo."
+  },
+  "login": {
+    "title": "Iniciar Sesión",
+    "subtitle": "Acceso al panel de administración",
+    "email": "Email",
+    "password": "Contraseña",
+    "submit": "Entrar",
+    "sending": "Entrando...",
+    "hint": "Usuarios de prueba:"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "logout": "Cerrar sesión",
+    "quotations": "Cotizaciones",
+    "reservations": "Reservaciones",
+    "packages": "Paquetes",
+    "promotions": "Promociones",
+    "loading": "Cargando...",
+    "noQuotations": "No hay cotizaciones",
+    "noReservations": "No hay reservaciones",
+    "noPackages": "No hay paquetes",
+    "noPromotions": "No hay promociones",
+    "folio": "Folio",
+    "state": "Estado",
+    "date": "Fecha",
+    "actions": "Acciones",
+    "price": "Precio",
+    "active": "Activo",
+    "yes": "Sí",
+    "no": "No",
+    "addPackage": "Agregar paquete",
+    "newPackage": "Nuevo paquete",
+    "status": {
+      "pendiente": "Pendiente",
+      "contactado": "Contactado",
+      "confirmada": "Confirmada",
+      "pagada": "Pagada",
+      "completada": "Completada",
+      "cancelada": "Cancelada"
+    },
+    "promoTitle": "Título",
+    "promoDiscount": "Descuento",
+    "promoValidity": "Vigencia",
+    "save": "Guardar",
+    "slugOptional": "slug (opcional, se genera del nombre)",
+    "includesPlaceholder": "Incluye (separado por comas)",
+    "imageUrlPlaceholder": "URL imagen (ej: /images/paquetes/nuevo.jpg)"
+  }
+}
