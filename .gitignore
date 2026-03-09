@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+.env
+.env.local
+# .env.production está en repo (solo VITE_*) para pruebas en Netlify
+
 
 # Editor directories and files
 .vscode/*
