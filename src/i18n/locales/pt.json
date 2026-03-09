@@ -2,6 +2,10 @@
   "common": {
     "scroll": "Rolar"
   },
+  "notFound": {
+    "message": "A página que você procura não existe.",
+    "backHome": "Voltar ao início"
+  },
   "whatsapp": {
     "title": "Como podemos ajudar?",
     "ariaLabel": "Contatar via WhatsApp",

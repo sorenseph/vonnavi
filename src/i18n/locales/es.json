@@ -2,6 +2,10 @@
   "common": {
     "scroll": "Desplazar"
   },
+  "notFound": {
+    "message": "La página que buscas no existe.",
+    "backHome": "Volver al inicio"
+  },
   "whatsapp": {
     "title": "¿En qué podemos ayudarte?",
     "ariaLabel": "Contactar por WhatsApp",
