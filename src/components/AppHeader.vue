@@ -3,6 +3,7 @@ import { ref, computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 import { useReservarModal } from '../composables/useReservarModal'
+import { useCart } from '@/composables/useCart'
 import { supabase } from '../lib/supabase'
 import LanguageSwitcher from './LanguageSwitcher.vue'
 import logoImg from '@/assets/logo/7CotyrWR5Rxspd32kh56jj2tdNk.png'
@@ -11,6 +12,7 @@ const route = useRoute()
 const { t } = useI18n()
 const menuOpen = ref(false)
 const user = ref(null)
+const cart = useCart()
 
 supabase.auth.getSession().then(({ data: { session } }) => {
   user.value = session?.user
@@ -56,6 +58,10 @@ const filteredLinks = computed(() =>
         class="header-ref__nav"
         :class="{ 'header-ref__nav--open': menuOpen }"
       >
+        <router-link to="/carrito" class="header-ref__cart" @click="menuOpen = false" aria-label="Carrito">
+          <span class="header-ref__cart-icon">🛒</span>
+          <span v-if="cart.itemCount.value" class="header-ref__cart-badge">{{ cart.itemCount.value }}</span>
+        </router-link>
         <template v-for="link in filteredLinks" :key="link.path">
           <div v-if="link.subLinks" class="header-ref__dropdown">
             <span class="header-ref__link" :class="{ 'header-ref__link--active': link.subLinks.some(s => route.path === s.path) }">
@@ -150,6 +156,45 @@ const filteredLinks = computed(() =>
   display: flex;
   align-items: center;
   gap: 1.5rem;
+}
+
+.header-ref__cart {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.75);
+  transition: all 0.2s;
+}
+.header-ref__cart:hover {
+  transform: translateY(-1px);
+  border-color: rgba(0,0,0,0.16);
+}
+.header-ref__cart-icon {
+  font-size: 1.1rem;
+}
+.header-ref__cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(255,255,255,0.9);
 }
 
 .header-ref__link {

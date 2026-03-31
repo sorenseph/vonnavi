@@ -50,4 +50,29 @@ const res = await fetch('https://api.resend.com/emails', {
 ### Alternativa: Sin Resend
 
 Si no configuras `RESEND_API_KEY`, la función no enviará emails pero retornará éxito. Las cotizaciones se guardan en Supabase y aparecen en el panel admin. Puedes integrar otro proveedor (SendGrid, etc.) editando `index.ts`.
+
+## create-checkout-session
+
+Crea una sesión de Stripe Checkout (modo pruebas o live según tu `STRIPE_SECRET_KEY`) a partir del carrito del frontend y regresa la URL para redirección.
+
+### Configuración
+
+1. Crear cuenta en Stripe y obtener llaves.
+2. Configurar secretos en Supabase (NO subir a git):
+
+```bash
+supabase secrets set STRIPE_SECRET_KEY=sk_test_...
+# Opcional: el front ya envía client_origin; SITE_URL solo es respaldo si falta Origin
+supabase secrets set SITE_URL="http://localhost:5173"
+```
+
+Tras cancelar en Stripe Checkout, el usuario vuelve a **`/checkout?canceled=1`** (mismo dominio que inició el pago), no a `/carrito`, para evitar confusiones con otro subdominio y `localStorage` vacío.
+
+3. Desplegar la función:
+
+```bash
+supabase functions deploy create-checkout-session
+```
+
+> Importante: La clave `sk_...` es secreta. La clave `pk_...` (publicable) va en frontend como `VITE_STRIPE_PUBLISHABLE_KEY` si luego quieres usar Stripe.js directamente.
 ||

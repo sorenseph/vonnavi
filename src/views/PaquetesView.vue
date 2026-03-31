@@ -4,6 +4,7 @@ import { usePackageI18n } from '../composables/usePackageI18n'
 import { useSeo } from '../composables/useSeo'
 import { useScrollReveal } from '../composables/useScrollReveal'
 import { paquetesEstaticos } from '@/data/paquetes'
+import { useCart } from '@/composables/useCart'
 import vuelo1 from '@/assets/Vuelos/XpSlTlDl8LcZ8ClJwchoyfn8.avif'
 import vuelo2 from '@/assets/Vuelos/8XPhplzHR2ipwvdsizVHVKgCg.avif'
 import vuelo3 from '@/assets/Vuelos/UXdALwELL4smvYbj5CLWGbNtIE.avif'
@@ -11,6 +12,7 @@ import vuelo4 from '@/assets/Vuelos/UHbBNlDQcPx11KmOjg8SD3ifbt8.avif'
 
 const { t } = useI18n()
 const { getPackageName, getPackageDesc } = usePackageI18n()
+const cart = useCart()
 useScrollReveal()
 
 useSeo({
@@ -33,26 +35,35 @@ function getPackageImage(p, index) {
       <p class="section-subtitle">{{ t('packages.subtitle') }}</p>
 
       <div class="paquetes-cards">
-        <router-link
+        <div
           v-for="(p, i) in paquetes"
           :key="p.id"
-          :to="`/paquetes/${p.slug}`"
           class="paquete-card animate-on-scroll"
           :style="{ animationDelay: `${i * 0.1}s` }"
         >
-          <div
-            class="paquete-card__img"
-            :style="{ backgroundImage: `url(${getPackageImage(p, i)})` }"
-          >
-            <div class="paquete-card__overlay"></div>
+          <router-link :to="`/paquetes/${p.slug}`" class="paquete-card__link">
+            <div
+              class="paquete-card__img"
+              :style="{ backgroundImage: `url(${getPackageImage(p, i)})` }"
+            >
+              <div class="paquete-card__overlay"></div>
+            </div>
+            <div class="paquete-card__body">
+              <h3 class="paquete-card__name">{{ getPackageName(p) }}</h3>
+              <span class="paquete-card__price">${{ Number(p.precio).toLocaleString('es-MX') }}</span>
+              <p v-if="getPackageDesc(p)" class="paquete-card__desc">{{ getPackageDesc(p) }}</p>
+              <span class="paquete-card__cta">{{ t('packages.viewDetails') }} →</span>
+            </div>
+          </router-link>
+          <div class="paquete-card__actions">
+            <button type="button" class="btn btn-primary btn-sm" @click="cart.addPackage(p)">
+              Agregar al carrito
+            </button>
+            <router-link to="/carrito" class="btn btn-outline btn-sm">
+              Ver carrito
+            </router-link>
           </div>
-          <div class="paquete-card__body">
-            <h3 class="paquete-card__name">{{ getPackageName(p) }}</h3>
-            <span class="paquete-card__price">${{ Number(p.precio).toLocaleString('es-MX') }}</span>
-            <p v-if="getPackageDesc(p)" class="paquete-card__desc">{{ getPackageDesc(p) }}</p>
-            <span class="paquete-card__cta">{{ t('packages.viewDetails') }} →</span>
-          </div>
-        </router-link>
+        </div>
       </div>
     </div>
   </div>
@@ -66,7 +77,8 @@ function getPackageImage(p, index) {
 }
 
 .paquete-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   border-radius: 20px;
   overflow: hidden;
@@ -79,6 +91,12 @@ function getPackageImage(p, index) {
 .paquete-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 24px 48px rgba(0,0,0,0.12), 0 8px 24px rgba(214, 151, 49, 0.08);
+}
+
+.paquete-card__link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .paquete-card:hover .paquete-card__cta {
@@ -134,6 +152,20 @@ function getPackageImage(p, index) {
   font-size: 0.95rem;
   font-weight: 600;
   transition: transform 0.3s;
+}
+
+.paquete-card__actions {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0 1.5rem 1.5rem;
+  margin-top: -0.25rem;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 0.55rem 1rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
 }
 
 .loading {

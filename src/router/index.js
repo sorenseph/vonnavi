@@ -26,6 +26,18 @@ const routes = [
     meta: { title: 'Paquete | Von Navi', requiresAuth: false }
   },
   {
+    path: '/carrito',
+    name: 'Carrito',
+    component: () => import('../views/CarritoView.vue'),
+    meta: { title: 'Carrito | Von Navi', requiresAuth: false }
+  },
+  {
+    path: '/checkout',
+    name: 'Checkout',
+    component: () => import('../views/CheckoutView.vue'),
+    meta: { title: 'Checkout | Von Navi', requiresAuth: false }
+  },
+  {
     path: '/cotizar',
     redirect: '/reservar'
   },
@@ -64,7 +76,9 @@ const routes = [
     name: 'AdminBlog',
     component: () => import('../views/AdminBlogView.vue'),
     meta: { title: 'Blog Admin | Von Navi', requiresAuth: true }
-  }
+  },
+  // Algunos hosts redirigen errores a /404 sin SPA fallback
+  { path: '/404', redirect: '/' }
 ]
 
 const router = createRouter({

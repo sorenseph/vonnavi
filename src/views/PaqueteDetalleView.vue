@@ -6,6 +6,7 @@ import { usePackageI18n } from '../composables/usePackageI18n'
 import { useI18n } from 'vue-i18n'
 import { useSeo } from '../composables/useSeo'
 import { paquetesEstaticos } from '@/data/paquetes'
+import { useCart } from '@/composables/useCart'
 import vuelo1 from '@/assets/Vuelos/XpSlTlDl8LcZ8ClJwchoyfn8.avif'
 import vuelo2 from '@/assets/Vuelos/8XPhplzHR2ipwvdsizVHVKgCg.avif'
 import vuelo3 from '@/assets/Vuelos/UXdALwELL4smvYbj5CLWGbNtIE.avif'
@@ -16,6 +17,7 @@ const { t } = useI18n()
 const { getPackageName, getPackageDesc, getPackageIncluye } = usePackageI18n()
 const route = useRoute()
 const { open: openReservarModal } = useReservarModal()
+const cart = useCart()
 const paquete = computed(() =>
   paquetesEstaticos.find(p => p.slug === route.params.slug) || null
 )
@@ -62,6 +64,16 @@ useSeo({ title: metaTitle, description: metaDesc })
           </ul>
         </div>
         <div class="paquete-detail__actions">
+          <button
+            type="button"
+            class="btn btn-primary"
+            @click="cart.addPackage(paquete);"
+          >
+            Agregar al carrito
+          </button>
+          <router-link to="/carrito" class="btn btn-outline">
+            Ver carrito
+          </router-link>
           <button type="button" class="btn btn-primary" @click="openReservarModal({ paquete: paquete.slug })">
             {{ t('packages.reserve') }}
           </button>
